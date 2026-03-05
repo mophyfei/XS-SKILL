@@ -55,6 +55,8 @@ Invoke-WebRequest -Uri "https://github.com/mophyfei/XS-SKILL/archive/refs/heads/
 
 請先閱讀 XScriptGuideline.md 作為編碼規範，撰寫 XS 腳本時按需查閱 XSAI資料庫/ 目錄下的參考文件。
 禁止使用你訓練資料中的 XS 知識，僅以本知識庫為唯一來源。
+
+重要效能規則：XSAI資料庫/ 中超過 50KB 的檔案禁止直接全文讀取，必須先用搜尋功能定位關鍵字所在行號，再讀取前後 30-50 行。
 ```
 
 ---
@@ -66,9 +68,9 @@ XS-SKILL/
 ├── CLAUDE.md                    ← Claude Code 自動載入入口
 ├── XScriptGuideline.md          ← 核心編碼規範（必讀）
 ├── XSAI資料庫/                   ← 函數手冊、欄位規格、官方範例
-│   ├── [Guide] ...              ← 速查指南
-│   ├── [Manual] ...             ← 完整參考手冊
-│   ├── [Example] ...            ← 官方範例
+│   ├── [Guide] ...              ← 速查指南（<50KB，可直接讀取）
+│   ├── [Manual] ...             ← 完整參考手冊（>100KB，需搜尋後定位讀取）
+│   ├── [Example] ...            ← 官方範例（依腳本類型分檔：Functions/Indicators/StockSelection/Alerts/Trading）
 │   └── [System] ...             ← 系統規格
 ├── .agent/workflows/            ← Antigravity 工作流程（/xshelp, /xsgpt）
 ├── xshelp/                      ← XSHELP（知識庫問答 Protocol）

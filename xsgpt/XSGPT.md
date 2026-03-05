@@ -81,22 +81,28 @@
 
 **XSAI 資料庫檔案索引：**
 
-| 檔案名稱 | 內容說明 | 適用場景 |
-|----------|---------|---------|
-| `[Example] XQ_Official_Script_Library.md` | 官方腳本範例庫 | 需要完整範例參考時 |
-| `[Manual] DataField_General_Data.md` | 一般資料欄位 | 查詢 GetField 可用欄位時 |
-| `[Manual] DataField_RealTime_Quotes.md` | 即時報價欄位 | 查詢即時報價相關欄位時 |
-| `[Manual] DataField_Stock_Selection.md` | 選股資料欄位 | 撰寫選股腳本時 |
-| `[Manual] XScript_BuiltIn_Functions_Reference.md` | 內建函數參考 | 查詢函數用法與參數時 |
-| `[Manual] XScript_Reserved_Keywords.md` | 保留字清單 | 確認保留字與避免命名衝突時 |
-| `[Manual] XScript_Syntax_Reference.md` | 語法參考 | 確認語法結構時 |
-| `[Manual] XScript_System_Functions_Reference.md` | 系統函數參考 | 查詢系統函數（如 SetPosition、Plot）時 |
-| `[System] XQ_Backtest_Debug_UI_Specs.md` | 回測 UI 規格 | 處理回測相關功能時 |
+| 檔案名稱 | 大小 | 適用場景 |
+|----------|------|---------|
+| `[Guide] XScript_Functions_QuickRef.md` | 6KB | 常用函數速查 |
+| `[Guide] XScript_Dev_Practical_Notes.md` | 8KB | 開發注意事項 |
+| `[Manual] XScript_BuiltIn_Functions_Reference.md` | 229KB | 查詢函數用法與參數時 |
+| `[Manual] XScript_System_Functions_Reference.md` | 192KB | 查詢系統函數時 |
+| `[Manual] XScript_Syntax_Reference.md` | 9KB | 確認語法結構時 |
+| `[Manual] XScript_Reserved_Keywords.md` | 37KB | 確認保留字時 |
+| `[Manual] DataField_General_Data.md` | 359KB | 查詢 getfield 可用欄位時 |
+| `[Manual] DataField_RealTime_Quotes.md` | 119KB | 查詢即時報價欄位時 |
+| `[Manual] DataField_Stock_Selection.md` | 457KB | 撰寫選股腳本時 |
+| `[Example] XQ_Scripts_Functions.md` | 164KB | 函數腳本範例 |
+| `[Example] XQ_Scripts_Indicators.md` | 282KB | 指標腳本範例 |
+| `[Example] XQ_Scripts_StockSelection.md` | 156KB | 選股腳本範例 |
+| `[Example] XQ_Scripts_Alerts.md` | 203KB | 警示腳本範例 |
+| `[Example] XQ_Scripts_Trading.md` | 59KB | 交易腳本範例 |
+| `[System] XQ_Backtest_Debug_UI_Specs.md` | 7KB | 回測 UI 規格 |
 
 **執行步驟：**
 
 1. **分析需求關鍵字：** 根據修改需求，判斷需要查找哪些參考文件。
-2. **讀取參考文件：** 使用 `Read` 工具直接讀取 `XSAI資料庫/` 下的對應 .md 檔案。
+2. **搜尋優先（>50KB 檔案強制）：** 對大型檔案必須先用 `Grep` 搜尋關鍵字定位行號，再用 `Read` 讀取前後 30-50 行。小型檔案（<50KB）可直接讀取。
 3. **擷取相關段落：** 從文件中找到與需求相關的函數說明、欄位規格或範例代碼。
 4. **記錄來源：** 將查找到的資料來源（檔名、章節）記錄下來，供 Phase 5 引用。
 
