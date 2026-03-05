@@ -1,0 +1,12 @@
+# Runtime artifacts (AI workflow outputs)
+docs/
+plan_init.json
+impl_report.json
+temp_impl.md
+logs_*.txt
+install.bat
+
+# Python virtual environments
+.venv/
+__pycache__/
+*.pyc
