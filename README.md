@@ -1,10 +1,34 @@
 # XS Skill — XScript 腳本開發知識庫
 
-## 這是什麼？
-
 這是一個 **純知識庫 Skill**，讓 AI 助手能夠正確撰寫 XQ 全球贏家交易平台的 XScript (XS) 腳本。
 
 **不需要安裝任何東西。** 不需要 Python 環境、不需要 npm、不需要 venv。AI 只要讀取 markdown 文件就能使用。
+
+---
+
+## 安裝與使用
+
+### Step 1: Clone 到本地
+
+```bash
+git clone https://github.com/mophyfei/XS-SKILL.git
+```
+
+### Step 2: 在 AI IDE 中開啟
+
+用你的 AI IDE（Claude Code、Cursor、Windsurf、Antigravity 等）打開 `XS-SKILL` 資料夾。
+
+### Step 3: 給 AI 的提示詞
+
+將以下內容貼給 AI，即可開始使用：
+
+```
+你現在位於一個 XScript (XS) 腳本開發知識庫。這是一個純知識 Skill，不需要安裝任何東西（不要建 venv、不要跑 npm、不要執行 install）。
+
+請先閱讀 README.md 了解結構，然後閱讀 XScriptGuideline.md 作為編碼規範。
+撰寫 XS 腳本時，按需查閱 XSAI資料庫/ 目錄下的參考文件。
+禁止使用你訓練資料中的 XS 知識，僅以本知識庫為唯一來源。
+```
 
 ---
 
@@ -57,32 +81,6 @@ xs-skill/
 - `*.venv/` — Python 虛擬環境（scripts 自動建立）
 - `logs_*.txt` — 安裝日誌
 - `install.bat` — 環境安裝腳本
-
----
-
-## 安裝與使用
-
-### Step 1: Clone 到本地
-
-```bash
-git clone https://github.com/mophyfei/XS-SKILL.git
-```
-
-### Step 2: 在 AI IDE 中開啟
-
-用你的 AI IDE（Claude Code、Cursor、Windsurf、Antigravity 等）打開 `XS-SKILL` 資料夾。
-
-### Step 3: 給 AI 的提示詞
-
-將以下內容貼給 AI，即可開始使用：
-
-```
-你現在位於一個 XScript (XS) 腳本開發知識庫。這是一個純知識 Skill，不需要安裝任何東西（不要建 venv、不要跑 npm、不要執行 install）。
-
-請先閱讀 README.md 了解結構，然後閱讀 XScriptGuideline.md 作為編碼規範。
-撰寫 XS 腳本時，按需查閱 XSAI資料庫/ 目錄下的參考文件。
-禁止使用你訓練資料中的 XS 知識，僅以本知識庫為唯一來源。
-```
 
 ---
 
