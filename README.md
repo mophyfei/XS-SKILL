@@ -6,21 +6,33 @@
 
 ---
 
-## 安裝方式
+## Antigravity 一鍵安裝
 
-### 方式 A：有 Git 的電腦
+在 Antigravity 中開啟一個新的專案資料夾，將以下這段話貼給 AI：
+
+```
+請將 XS Skill 下載到目前的資料夾：下載 https://github.com/mophyfei/XS-SKILL/archive/refs/heads/master.zip，解壓縮後將 XS-SKILL-master 裡面的所有檔案（包含隱藏資料夾 .agent）搬到目前資料夾的根目錄，然後刪除 zip 和暫存資料夾。完成後請閱讀 README.md。這是純知識 Skill，不要安裝任何東西、不要建 venv、不要建專案。
+```
+
+完成後輸入 `/xshelp` 即可開始使用。
+
+---
+
+## 其他安裝方式
+
+### Git Clone
 
 ```bash
 git clone https://github.com/mophyfei/XS-SKILL.git
 ```
 
-### 方式 B：沒有 Git 的電腦（PowerShell 一行下載）
+### PowerShell 一行下載（無需 Git）
 
 ```powershell
 Invoke-WebRequest -Uri "https://github.com/mophyfei/XS-SKILL/archive/refs/heads/master.zip" -OutFile "XS-SKILL.zip"; Expand-Archive "XS-SKILL.zip" -DestinationPath "."; Rename-Item "XS-SKILL-master" "XS-SKILL"; Remove-Item "XS-SKILL.zip"
 ```
 
-### 方式 C：手動下載
+### 手動下載
 
 到 https://github.com/mophyfei/XS-SKILL 點擊綠色 **Code** 按鈕 → **Download ZIP** → 解壓縮
 
@@ -28,13 +40,13 @@ Invoke-WebRequest -Uri "https://github.com/mophyfei/XS-SKILL/archive/refs/heads/
 
 ## 使用方式
 
-下載完成後，用你的 AI IDE 打開 `XS-SKILL` 資料夾：
+用你的 AI IDE 打開 `XS-SKILL` 資料夾：
 
 | 平台 | 啟動方式 |
 |------|---------|
-| **Antigravity** | 打開資料夾 → 輸入 `/xshelp`（問答）或 `/xsgpt`（改腳本）→ 直接開始 |
-| **Claude Code** | 打開資料夾 → Skill 自動載入 → 直接開始 |
-| **其他 AI (Cursor, Windsurf 等)** | 打開資料夾 → 貼上下方提示詞 → 直接開始 |
+| **Antigravity** | 輸入 `/xshelp`（問答）或 `/xsgpt`（改腳本） |
+| **Claude Code** | Skill 自動載入，直接開始 |
+| **其他 AI (Cursor, Windsurf 等)** | 貼上下方提示詞 |
 
 ### 給其他 AI 的提示詞
 
